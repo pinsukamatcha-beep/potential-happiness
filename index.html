@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Maison Sole — Etalase Sneaker Ikonik</title>
+<meta name="description" content="Etalase harga sneaker ikonik Nike, Puma, Salomon, Vans, Dr. Martens, dan Converse dari sumber resmi & terpercaya, lengkap dengan pencari toko terdekat." />
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>👞</text></svg>" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<nav class="nav">
+  <div class="container">
+    <div class="nav-mark">Maison <em>Sole</em></div>
+    <ul class="nav-links">
+      <li><a href="#koleksi">Koleksi</a></li>
+      <li><a href="#toko">Toko Terdekat</a></li>
+      <li><a href="#sumber">Sumber Data</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="hero-spot"></div>
+  <div class="container hero-grid">
+    <div>
+      <div class="eyebrow-line"><span class="rule"></span><span>Etalase harga sneaker kekinian</span></div>
+      <h1>Enam ikon jalanan, <i>satu etalase</i> berkelas.</h1>
+      <p class="lead">Bandingkan kisaran harga resmi Nike, Puma, Salomon, Vans, Dr. Martens, dan Converse — seluruhnya diverifikasi dari situs brand resmi dan reseller berlisensi, tanpa sumber abal-abal.</p>
+      <div class="hero-actions">
+        <a href="#koleksi" class="btn btn-primary">Lihat Koleksi</a>
+        <a href="#toko" class="btn btn-outline">Cari Toko Terdekat</a>
+      </div>
+    </div>
+    <div class="hero-art">
+      <div class="plinth"></div>
+      <svg viewBox="0 0 420 260" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <path d="M40 190 C40 165 60 150 85 148 C110 146 118 130 140 120 C165 108 190 100 225 100 C260 100 280 112 300 128 C315 140 322 150 340 152 C360 154 372 168 375 185 C378 198 372 208 358 208 L55 208 C46 208 40 200 40 190 Z" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"/>
+        <path d="M85 148 C95 160 100 175 96 190" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+        <path d="M140 120 C146 138 148 158 142 190" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+        <path d="M195 108 C200 130 200 160 194 190" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+        <path d="M55 208 L358 208" stroke="currentColor" stroke-width="6" stroke-linecap="round" opacity="0.35"/>
+        <path d="M158 116 L172 100 M178 112 L194 97 M198 109 L216 96" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" opacity="0.7"/>
+      </svg>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section id="koleksi" class="container">
+    <div class="section-head">
+      <div>
+        <h2>Katalog enam brand paling dicari</h2>
+        <p>Dua model paling ikonik dari tiap brand, lengkap dengan tautan ke sumber resmi untuk foto & spesifikasi lengkap.</p>
+      </div>
+      <span class="section-number">01 — Koleksi</span>
+    </div>
+
+    <div id="brand-rows"></div>
+  </section>
+
+  <section id="toko" class="container">
+    <div class="section-head" style="border:none; margin-bottom:28px;">
+      <div>
+        <h2>Toko resmi terdekat dari lokasimu</h2>
+        <p>Fitur ini butuh akses lokasi perangkatmu untuk menghitung jarak — browser akan meminta izin terlebih dahulu.</p>
+      </div>
+      <span class="section-number">02 — Toko Terdekat</span>
+    </div>
+
+    <div class="finder">
+      <div class="finder-head">
+        <div>
+          <h2>Temukan gerai asli, bukan tebakan</h2>
+          <p>Semua gerai di bawah adalah lokasi resmi brand atau reseller berlisensi (Nike, Puma, Vans, Dr. Martens, Converse, Salomon, Foot Locker, Sports Station) yang sudah terverifikasi — bukan lokasi hasil terkaan.</p>
+          <p class="privacy-note">Lokasimu hanya diproses langsung di perangkatmu untuk menghitung jarak ke toko — tidak dikirim atau disimpan ke server manapun.</p>
+        </div>
+        <div class="finder-panel">
+          <button id="locate-btn" class="btn locate-btn">📍 Izinkan Akses Lokasi Saya</button>
+          <div class="brand-filter" id="brand-filter"></div>
+          <div class="finder-status" id="finder-status">Klik tombol di atas untuk mengizinkan browser membaca lokasimu.</div>
+        </div>
+      </div>
+      <ul class="store-list" id="store-list"></ul>
+    </div>
+  </section>
+
+  <section id="sumber" class="container">
+    <div class="section-head">
+      <div>
+        <h2>Kenapa datanya bisa dipercaya</h2>
+        <p>Tidak ada harga karangan atau foto comotan — semua tertelusur ke sumbernya.</p>
+      </div>
+      <span class="section-number">03 — Sumber Data</span>
+    </div>
+    <div class="trust">
+      <div class="trust-card">
+        <span class="num">i.</span>
+        <h4>Harga dari situs resmi brand</h4>
+        <p>nike.com/id, id.puma.com, id.salomon.com, dan converse.id jadi rujukan utama tiap model.</p>
+      </div>
+      <div class="trust-card">
+        <span class="num">ii.</span>
+        <h4>Diperkuat reseller berlisensi</h4>
+        <p>ZALORA Indonesia, JD Sports Indonesia, dan Foot Locker ID dipakai sebagai pembanding kisaran harga pasar.</p>
+      </div>
+      <div class="trust-card">
+        <span class="num">iii.</span>
+        <h4>Tautan langsung ke sumber</h4>
+        <p>Setiap produk punya tautan "Lihat sumber" untuk cek foto resmi & detail produk terbaru sebelum membeli.</p>
+      </div>
+      <div class="trust-card">
+        <span class="num">iv.</span>
+        <h4>Lokasi toko terverifikasi</h4>
+        <p>Data gerai memakai nama, alamat, dan koordinat yang sudah dikonfirmasi — bukan hasil asumsi wilayah.</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container">
+    <span>Maison Sole — etalase referensi harga, bukan toko resmi brand manapun.</span>
+    <span>Harga berlaku sekitar Agustus 2026, cek sumber untuk harga real-time.</span>
+  </div>
+</footer>
+
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
